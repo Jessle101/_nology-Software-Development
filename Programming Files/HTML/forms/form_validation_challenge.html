@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Challenge</title>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/mzbwyrqg" method="POST">
+      <!-- Full Name -->
+      <label for="name">Full Name: </label>
+      <input
+        type="text"
+        class="name"
+        name="firstName"
+        placeholder="enter first name..."
+        required
+      />
+      <input
+        type="text"
+        class="name"
+        name="lastName"
+        placeholder="enter last name..."
+        required
+      />
+      <br />
+      <br />
+
+      <select name="state" id="state">
+        <option value="" selected disabled hidden>
+          Please select a state!
+        </option>
+        <option>ACT</option>
+        <option>NSW</option>
+        <option>NT</option>
+        <option>TAS</option>
+        <option>SA</option>
+        <option>QLD</option>
+        <option>VIC</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="email" id="email">Email: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="enter email here..."
+        required
+      />
+      <br />
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

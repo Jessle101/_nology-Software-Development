@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main > div > .contact-us-form {
+  display: inline-table;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+}

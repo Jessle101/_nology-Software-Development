@@ -1,0 +1,55 @@
+.container {
+  width: 605px;
+  height: 250px;
+  border: 2px solid coral;
+  background-color: rgb(115, 238, 115);
+  color: rgb(115, 238, 115);
+  font-size: 42.5%;
+}
+
+#box {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(247, 90, 192);
+  border: 3px solid coral;
+}
+
+#box p {
+  color: black;
+  font-size: small;
+  margin: 40px 0px 0 20px;
+}
+
+.container > #box h1 {
+  color: black;
+  font-size: medium;
+  margin: 40px 0px 0 20px;
+}
+
+.container > #box3 {
+  width: 605px;
+  height: 250px;
+  border: 2px solid coral;
+  background-color: rgb(115, 238, 115);
+  color: rgb(115, 238, 115);
+  font-size: 42.5%;
+}
+
+#box2 {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(247, 90, 192);
+  border: 3px solid coral;
+}
+
+#box2 {
+  color: black;
+  font-size: small;
+  margin: 40px 0px 0 20px;
+}
+
+.container #box2 h1 {
+  color: black;
+  font-size: medium;
+  margin: 40px 0px 0 20px;
+}

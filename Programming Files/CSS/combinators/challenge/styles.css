@@ -1,0 +1,45 @@
+* {
+  list-style: none;
+}
+
+body > div {
+  border: 1px solid black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red-underlined {
+  color: red;
+  text-decoration: underline;
+}
+
+.blue {
+  color: blue;
+}
+
+.coral {
+  color: coral;
+}
+
+.brown {
+  color: brown;
+}
+
+* {
+  list-style: none;
+}
+
+/* 2nd Challenge */
+.italics {
+  font-style: italic;
+}
+
+.grey {
+  color: lightgray;
+}
+
+.underlined {
+  text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+/* The nav bar should be created using CSS flex & HTML */
+/* Add any styling you would like to this nav bar */
+* {
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+p {
+ text-align: center;
+ padding-top: 10px;
+ font-family: sans-serif;
+}
+
+nav > ul > span > li > a {
+  text-decoration: red;
+}
+
+nav > ul > span > li > a:hover {
+  font-weight: bold;
+  text-decoration: yellow;
+}
+
+span {
+  list-style-type: none;
+  border: 3px dashed black;
+  display: flex;
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

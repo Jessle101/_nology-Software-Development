@@ -1,0 +1,64 @@
+main :not(.gallery > img and .gallery2 > img) {
+  display: flex;
+  justify-content: center;
+}
+
+/* display: grid, grid-template-columns: 1fr, 1fr, 1fr (1f = column); grid-gap*/
+
+main > .gallery {
+  display: grid;
+  /* each column should be the same width */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* each column should have some space between them */
+  grid-gap: 20px;
+}
+
+main > .gallery > a > img {
+  /* make all the images the same size in CSS */
+  width: 125px;
+  height: 125px;
+  /* Make sure all images have padding and a border */
+  padding: 10px;
+  border: 1px solid white;
+  /* Additional Image styling */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main > .gallery > a > img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 127.5px;
+  height: 127.5px;
+}
+
+main > .gallery2 {
+  display: grid;
+  /* each column should be the same width */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* each column should have some space between them */
+  grid-gap: 20px;
+}
+
+main > .gallery2 > a > img {
+  /* make all the images the same size in CSS */
+  width: 125px;
+  height: 125px;
+  /* Make sure all images have padding and a border */
+  padding: 10px;
+  border: 1px solid white;
+  /* Additional Image styling */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main > .gallery2 > a > img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 127.5px;
+  height: 127.5px;
+}
+
+header > h1 {
+  cursor: pointer;
+}

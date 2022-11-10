@@ -1,0 +1,26 @@
+h1 {
+  /* back-up fonts, i.e. Helvetica if Arial cannot be read on system */
+  font-family: "Indie Flower", cursive;
+  /* inline in index.html takes priority (cplour wise) */
+  color: rgb(208, 43, 159);
+
+  /* two values - top and bottom 30px and left and right 80px  */
+
+  /* four values - top right bottom left */
+  margin: 5px 15px 30px 200px;
+
+  /* maring-top/right/left/bottom */
+}
+
+p {
+  font-weight: bold;
+  font-style: italic;
+
+  border: 20px groove yellowgreen;
+}
+
+h2 {
+  border-width: 5px;
+  border-style: dotted;
+  border-color: rgb(214, 50, 61);
+}

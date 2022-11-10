@@ -1,0 +1,31 @@
+div.container p {
+  color: red;
+}
+
+/* only paragraphs in div.container are affected */
+div.container > p {
+  color: blue;
+}
+
+/* adjacent sibling combinators */
+div.container + p {
+  color: yellowgreen;
+}
+
+/* stronger specificity so has priority over latter ("0,1,3" vs "0,1,2") */
+div.container + p + p {
+  color: rgb(181, 68, 149);
+}
+
+/* general sibling combinator */
+div.container ~ p {
+  color: orchid;
+}
+
+.para {
+  color: khaki;
+}
+
+div.container ~ .text {
+  color: rgb(88, 194, 255);
+}

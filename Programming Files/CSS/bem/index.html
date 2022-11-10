@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BEM</title>
+  </head>
+  <body>
+    <!-- BEM
+        Block Element Modifier -->
+    <!-- Why would we use BEM? -->
+    <!-- Staying consistent -->
+    <!-- Modular and reusable -->
+
+    <div class="card">
+      <h2 class="card__title card__title--impportant">This is my Title</h2>
+      <p class="card__description">This is my description</p>
+      <button class="card__btn">Click Me</button>
+      <button class="card__btn card__btn__secondary">Click Me</button>
+    </div>
+
+    <div class="card">
+      <h2 class="card__title card__title--impportant">This is my Title</h2>
+      <p class="card__description">This is my description</p>
+      <button class="card__btn">Click Me</button>
+      <button class="card__btn card__btn__secondary">Click Me</button>
+      <button class="btn--secondary">Click Me!</button>
+    </div>
+
+    <!-- You can still have stand along 'btn'/blocks in general -->
+    <div class="about">
+      <div class="about_text--wrapper">
+        <h2 class="about__tittle">About Me!</h2>
+        <p class="about_docs">Some text about me</p>
+        <button class="btn">Click Me!</button>
+      </div>
+    </div>
+
+    <article class="gallery-item">
+      <img
+        class="gallery__img"
+        src="https://www.placecage.com/gif/283/196"
+        alt="nick cage shrugging outta plane"
+      />
+      <section class="gallery-item__wrapper">
+        <!-- Sometimes with multiple levels of nesting, we want to "flatten" the hierarchy, and not include every single element with generic elements like wrapper, etc -->
+        <h2 class="gallery-item__title">This is my main heading</h2>
+        <h4 class="gallery-item__subtitle">This is a subheading</h4>
+        <p class="gallery-item__info">This is some text about Cage N.</p>
+      </section>
+      <button class="btn">More info</button>
+    </article>
+  </body>
+</html>

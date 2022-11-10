@@ -1,0 +1,40 @@
+.card {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.card__title {
+  color: rgb(75, 75, 75);
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.card__title--important {
+  color: purple;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: blanchedalmond;
+  color: forestgreen;
+  border: 2px solid silver;
+  border-radius: 4px;
+}
+
+.btn--secondary {
+  color: chartreuse;
+  border-color: chartreuse;
+  background-color: black;
+}
+
+.gallery-item {
+  margin: 20px;
+  padding: 20px;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  width: 300px;
+}

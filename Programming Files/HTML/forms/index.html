@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- 1. What command do we use to get a version of a remove repo on our computer? -->
+    <!-- git clone <url>, if we already have the repo, git pull to get the most up to date version -->
+
+    <!-- 2. How would we create a new branch -->
+    <!-- git branch <name>, git checkout <name>, git checkout -b <name> -->
+
+    <!-- 3. What command do we use to move changes from working directory to staging area? -->
+    <!-- git add <fileName>, git add . (add all changes that we made) -->
+
+    <!-- 4. What command do you we use to move changes from local to remote repo -->
+    <!-- git push -u origin <branchName> -->
+
+    <!-- 5. What is an inline element? + example -->
+    <!-- Element that doesn't force a new line, exp: img, it will only take as much space as it needs -->
+
+    <!-- 6. What is a block element? + example -->
+    <!-- Takes up the whole width of the browser, example: div -->
+
+    <!-- 7. What is a semantic element and why should we use them? -->
+    <!-- Element that has a specific use/meaning to the browser, example header -->
+    <!-- SEO purposes, read mode/screen readers, readability for other devs -->
+
+    <!-- HTML FORMS -->
+    <!-- 1. Why do we need forms? -->
+    <!-- To get data from the user, interact with the user -->
+
+    <!-- 2. Examples of forms -->
+    <!-- Login -->
+    <!-- Contact -->
+    <!-- Newsletter signup forms -->
+    <!-- Payment forms, like card details -->
+    <!-- Forms on e-commerce websites -->
+    <!-- Questionnaires, surveys -->
+    <!-- Accepting terms & conditions, Cookies -->
+
+    <!-- 3. Different inputs we can use -->
+    <!--  -->
+
+    <!-- 4. How to add labels to our forms -->
+
+    <!-- Ask the user for their first name -->
+    <label for="firstName">First Name: </label>
+    <input id="firstName" type="text" placeholder="Please enter first name" />
+    <br />
+    <br />
+
+    <!-- "                    " last name -->
+    <label for="lastName">Last Name: </label>
+    <input id="lastName" type="text" placeholder="Please enter last name" />
+    <br />
+    <br />
+
+    <!-- Message -->
+    <label for="msg">Message: </label>
+    <textarea
+      id="msg"
+      cols="20"
+      rows="6"
+      placeholder="Please enter your message"
+    ></textarea>
+    <br />
+    <br />
+
+    <!-- Age -->
+    <label for="age">Age: </label>
+    <input id="age" type="number" placeholder="Please enter your age" />
+    <br />
+    <br />
+
+    <!-- What state they live in -->
+    <label for="state">State: </label>
+    <select id="state">
+      <option>ACT</option>
+      <option>NSW</option>
+      <option>VIC</option>
+      <option>SA</option>
+      <option>TAS</option>
+      <option>NT</option>
+      <option>QLD</option>
+    </select>
+  </body>
+</html>

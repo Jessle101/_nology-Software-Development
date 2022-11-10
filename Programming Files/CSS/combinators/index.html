@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Combinators</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- the descendants of div.container -->
+
+      <div class="inner">
+        <!-- grandchild of div.container and also a child of div.inner (not a direct descendant of the div.container")-->
+        <p>I am a grandchild of div.container, I am bald</p>
+      </div>
+
+      <p>I am a child of div.container and a sibling to div.inner</p>
+
+      <p>I am also a child of div.container</p>
+    </div>
+
+    <p>I am a sibling of div.container</p>
+    <p>I am a second sibling of div.container</p>
+
+    <!-- this can be used to apply multiple types of styling to a variety of groups -->
+    <p class="para text">HEWWO :3</p>
+  </body>
+</html>

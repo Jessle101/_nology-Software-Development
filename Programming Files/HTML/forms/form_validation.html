@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <!-- first name -->
+    <form action="https://formspree.io/f/xqkjwbzk" method="POST">
+      <label for="firstName">First Name: </label>
+      <input
+        id="firstName"
+        name="First Name"
+        type="text"
+        placeholder="Enter first name..."
+        required
+      />
+      <br />
+      <br />
+
+      <!-- last name -->
+      <label for="lastName">Last Name: </label>
+      <input
+        id="lastName"
+        name="Last Name"
+        type="text"
+        placeholder="Enter last name..."
+        required
+      />
+      <br />
+      <br />
+
+      <!-- fav colour -->
+      <label for="favColour">Favourite Colour: </label>
+      <select id="favColour" name="Favourite Colour">
+        <option value="" selected disabled hidden>Please select a colour!</option>
+      </select>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Yellow</option>
+        <option>Green</option>
+      <br />
+      <br />
+
+      <!-- phone number -->
+      <!-- 0123456789 -->
+      <label for="phone">Phone Number: </label>
+      <input
+        id="phone"
+        name="Phone Number"
+        type="tel"
+        pattern="[04][0-9]{8}"
+        placeholder="0412 345 678"
+      />
+      <br />
+      <br />
+
+      <!-- email address -->
+      <label for="email">Email Address: </label>
+      <input
+        type="email"
+        id="email"
+        name="Email"
+        placeholder="Enter you email..."
+        required
+      />
+      <br />
+      <br />
+
+      <!-- password -->
+      <label for=pass">Password: </label>
+      <input id="pass" name="Password" type="password" placeholder="enter password here..." required minlength="6" maxlength="20"/>
+      <br>
+      <br>
+
+      <!-- Age -->
+      <label for="age">Age: </label>
+      <input id="age" type="number" placeholder="enter age here..." required min="5" max="150" />
+      <br />
+      <br />
+
+      <button type="submit">Send form</button>
+
+      <!-- Making sure that the user doesn't submit a blank form -->
+      <!-- Make sure that the email is an email -->
+      <!-- Make sure the phone number is the right format -->
+      <!-- Age needs to be a positive number, min age: 1, max age: 150 -->
+    </form>
+  </body>
+</html>

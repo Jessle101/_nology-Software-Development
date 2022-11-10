@@ -1,0 +1,62 @@
+<!-- Portfolio Project -->
+<!DOCTYPE html>
+<!-- Goals -->
+<!-- Setting up a HTML & CSS Project: Create a website with 2 pages and link them all together using a navigation bar with links. -->
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <!-- Contact Us Page -->
+    <title>Jessie's Site | Contact Us</title>
+  </head>
+  <body>
+    <!-- Each page should have a header section with an h1 and p to describe the purpose of the page -->
+    <header>
+      <h1>Jessie's Site</h1>
+    </header>
+    <!-- Page has a navigation bar that links to all other pages-->
+    <nav>
+      <ul>
+        <span>
+          <!-- On the Contact Us page it links to the Home Page -->
+          <li><a href="home.html">Home</a></li>
+          <li><a href="contact-us.html">Contact Us </a></li>
+        </span>
+      </ul>
+    </nav>
+
+    <!-- label for="">name, input type= text, textarea i.e. name id rows cols -->
+
+    <main>
+      <!-- Create a contact form in a main section on your Contact Us page -->
+      <!-- Every field in the form should have a label -->
+      <div class="contact-us-form">
+        <!-- Email (text input) -->
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" />
+        <!-- Full Name (text input) -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" />
+        <!-- Message (text area, 3 rows, 20 cols) -->
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" cols="20" rows="3">
+How can we assist you?</textarea
+        >
+        <!-- Clear (button) -->
+        <button>Clear</button>
+        <!-- Submit (button) -->
+        <button>Submit</button>
+      </div>
+    </main>
+
+    <p>Email:<a href="support@jessiesite.com">support@jessiesite.com</a></p>
+    <!-- p here instead of header as it looks better -->
+  </body>
+  <style>
+    p {
+      text-decoration: underline;
+      color: red;
+    }
+  </style>
+</html>

@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row; */
+  width: 60vw;
+  height: 300px;
+  /* parent border affecting children with the justify content */
+  border: 1px solid black;
+  justify-content: center;
+  /* sets items (inputs in this case) to centre of screen */
+  align-items: center;
+}
+
+input {
+  width: 300px;
+}

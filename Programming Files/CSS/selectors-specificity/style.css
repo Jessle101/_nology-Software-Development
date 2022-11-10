@@ -1,0 +1,19 @@
+p {
+  color: blue;
+  background-color: lightgrey;
+}
+
+/* class > p */
+.red-para {
+  color: red;
+}
+
+/* id strength > class & p */
+/* more specific = more priority */
+#green {
+  color: green;
+}
+
+* {
+  background-color: rgb(255, 103, 110);
+}
