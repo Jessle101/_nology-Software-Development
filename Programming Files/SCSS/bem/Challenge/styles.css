@@ -1,3 +1,4 @@
+/* First Part */
 .box1 {
   border: 3px dashed green;
 }
@@ -30,8 +31,12 @@
   text-align: end;
 }
 
+/* 2nd Part */
 .box3 {
   border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .box3__title {
   color: blue;

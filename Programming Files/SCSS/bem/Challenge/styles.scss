@@ -38,6 +38,9 @@
 
 .box3 {
   border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 
   &__title {
     color: blue;
