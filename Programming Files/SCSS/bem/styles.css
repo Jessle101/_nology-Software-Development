@@ -1,0 +1,22 @@
+h1 {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+  border: 5px solid violet;
+  font-size: 45px;
+}
+.btn__text {
+  font-style: italic;
+  font-weight: bold;
+}
+.btn__text--red {
+  color: red;
+}
+.btn:hover {
+  transform: scale(104%);
+}
+.btn--hover--black:hover {
+  background-color: black;
+}
