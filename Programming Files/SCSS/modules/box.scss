@@ -1,0 +1,25 @@
+@import "./partials/palette";
+@import "./partials/typography";
+
+.box {
+  &__header {
+    padding: 20px;
+    &--border-gold {
+      border: 2px solid $medium-champagne;
+    }
+  }
+
+  &__para {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+
+    &--pink {
+      color: $congo-pink;
+    }
+
+    &--apricot {
+      color: $apricot;
+    }
+  }
+}

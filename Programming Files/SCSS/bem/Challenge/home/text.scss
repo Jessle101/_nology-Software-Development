@@ -1,0 +1,16 @@
+@import "../partials/_palette";
+@import "../partials/typography";
+
+.text {
+  &--coral {
+    color: $default-coral;
+  }
+
+  &--brown {
+    color: $default-brown;
+  }
+
+  &--bold {
+    font-weight: $default-bold;
+  }
+}

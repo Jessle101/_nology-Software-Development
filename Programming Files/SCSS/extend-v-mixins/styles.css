@@ -1,0 +1,16 @@
+.container, .card, .blog {
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.card, .blog {
+  display: flex;
+  justify-content: center;
+  border: 2px solid crimson;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

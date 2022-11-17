@@ -1,0 +1,51 @@
+@use "./devices";
+
+.btn {
+    // How to write a media query?
+
+    @media only screen and (max-width: devices.$sm) {
+        font-size: 10px;
+        color: red;
+    }
+
+    @media only screen and (min-width: (devices.$sm + 1px)) and (max-width: devices.$md) {
+        font-size: 20px;
+        background-color: hotpink;
+    }
+}
+
+.gallery {
+    display: grid;
+
+    @include devices.phone {
+        grid-template-columns: 1fr;
+        img {
+            margin: 2px;
+            width: 90vw;
+        }
+    }
+
+    @include devices.tablet {
+        grid-template-columns: 1fr 1fr;
+        img {
+            margin: 2px;
+            width: 45vw;
+        }
+    }
+
+    @include devices.tablet-landscape {
+        grid-template-columns: 1fr 1fr 1fr;
+        img {
+            margin: 2px;
+            width: 30vw;
+        }
+    }
+
+    @include devices.laptop {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        img {
+            margin: 2px;
+            width: 23vw;
+        }
+    }
+}

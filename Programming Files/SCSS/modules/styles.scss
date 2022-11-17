@@ -1,0 +1,6 @@
+// compiles theme.scss before both box.scss & styles.scss file into css file
+@use "theme.scss";
+// compiles box.scss before styles.scss file into css file
+@use "box.scss";
+// compiles container.scss last
+@use "container.scss";

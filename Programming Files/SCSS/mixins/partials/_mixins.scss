@@ -1,0 +1,24 @@
+$default-text-color: red;
+$default-text-deco: bold;
+
+@mixin default-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $default-text-color;
+  font-weight: $default-text-deco;
+}
+
+@mixin size-mod($sml, $med, $lrg) {
+  &--sml {
+    font-size: $sml;
+  }
+
+  &--med {
+    font-size: $med;
+  }
+
+  &--lrg {
+    font-size: $lrg;
+  }
+}

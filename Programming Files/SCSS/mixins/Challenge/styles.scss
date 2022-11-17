@@ -1,0 +1,32 @@
+@use "./partials/mixy";
+
+* {
+  margin: 0;
+}
+
+.container {
+  @include mixy.display;
+  flex-direction: column;
+
+  &__card {
+    @include mixy.display;
+    margin-bottom: 20px;
+    width: 500px;
+
+    &--blue1 {
+      @include mixy.blue-border-solid;
+    }
+
+    &--blue2 {
+      @include mixy.blue-border-dashed;
+    }
+
+    &--red {
+      @include mixy.red-border;
+    }
+
+    #btn {
+      transform: scale(150%);
+    }
+  }
+}

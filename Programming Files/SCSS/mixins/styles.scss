@@ -1,0 +1,21 @@
+@use "./partials/mixins";
+
+// How do we use a mixin?
+.nav-bar {
+  @include mixins.default-flex;
+  padding: 25px;
+}
+
+.gallery {
+  @include mixins.default-flex;
+}
+
+.card {
+  &__btn {
+    background-color: aquamarine;
+
+    @include mixins.size-mod(10px, 50px, 169px);
+  }
+}
+// How do we parameterise mixins?
+// Can take certain values depending on where the mixin is used

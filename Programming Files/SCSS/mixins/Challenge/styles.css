@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  flex-direction: column;
+}
+.container__card {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 500px;
+}
+.container__card--blue1 {
+  border: 2px solid blue;
+}
+.container__card--blue2 {
+  border: 2px dashed blue;
+}
+.container__card--red {
+  border: 2px dashed red;
+}
+.container__card #btn {
+  transform: scale(150%);
+}

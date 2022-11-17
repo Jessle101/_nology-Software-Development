@@ -1,0 +1,30 @@
+// placeholder (creates new block in CSS output)
+// extending placeholders safer, as if card changes = no adverse affects
+%default-spacing {
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+}
+
+// extend rulle with placeholders/selectors (i.e. class)
+// non-parametised/block of styling is always the same than you can extend
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  @extend %default-spacing;
+}
+
+// values changing on depending when and where it is used = mixins
+.card {
+  @include flex;
+  border: 2px solid crimson;
+  @extend %default-spacing;
+}
+
+.blog {
+  @extend .card;
+}
+
+.container {
+  @include flex;
+}

@@ -1,0 +1,75 @@
+$small: 600px;
+$md: 900px;
+$sm: 576px;
+
+@mixin horizontal-stripe {
+  // relative to parent container's dimensions
+  height: 33.33%;
+  width: 100%;
+}
+
+@mixin vertical-stripe {
+  // relative to parent container's dimensions
+  width: 33.33%;
+  height: 100%;
+}
+
+@mixin stripe-color($firstColor, $secondColor, $thirdColor) {
+  &__stripe {
+    &--one {
+      background-color: $firstColor;
+    }
+
+    &--two {
+      background-color: $secondColor;
+    }
+
+    &--third {
+      background-color: $thirdColor;
+    }
+  }
+}
+
+// parent container
+.flag {
+  // dimensions of parent container
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+
+  // if the screen is smaller than 600px
+  @media only screen and (min-width: ($sm 
+  + 1px)) and (max-width: ($md)) {
+    &__stripe {
+      @include horizontal-stripe;
+      @include stripe-color(black, red, yellow);
+    }
+  }
+
+  @media only screen and (min-width: ($sm 
+  + 1px)) and (max-width: ($md)) {
+    display: flex;
+
+    &__stripe {
+      @include vertical-stripe;
+      @include stripe-color(black, red, yellow);
+    }
+  }
+
+  @media only screen and (min-width: ($sm 
+  + 1px)) and (max-width: ($md)) {
+    display: flex;
+
+    &__stripe {
+      @include vertical-stripe;
+      @include stripe-color(green, white, orange);
+    }
+  }
+}
+
+.text {
+  @include devices.phone {
+    // media query specific command, @content rule doesn't work purely in a mixin
+    @content;
+  }
+}
