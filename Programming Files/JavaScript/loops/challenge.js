@@ -91,6 +91,8 @@ for (let i = 0; i < str.length; ++i) {
   i % 2 === 0 ? (newStr += nextChar) : (newStr += str[i].toUpperCase());
 }
 
+console.log(newStr);
+
 // Challenge: Removing Vowels
 
 // MVP
@@ -98,6 +100,35 @@ for (let i = 0; i < str.length; ++i) {
 // Loop through the letters in this and build a new string
 // The new strings should be the same as the input with the vowels missing
 // E.g: calum => clm, rachel => rchl, martyna => mrtyn
+
+let vowels = ["a", "e", "i", "o", "u"];
+function removeVowels(name) {
+  let rslOfRemoveMethod = "";
+  for (let i = 0; i < name.length; ++i) {
+    // .include method returns true or false
+    if (!vowels.includes(name[i])) {
+      rslOfRemoveMethod += name[i];
+    }
+  }
+  return rslOfRemoveMethod;
+}
+
+console.log(removeVowels("calum"));
+
+let str = "hello";
+let vowels = ["a", "e", "i", "o", "u"];
+let strOutput = "";
+
+for (let j = 0; j < str.length; ++j) {
+  for (let h = 0; h < vowels.length; ++h) {
+    if (str[j] !== vowels[h]) {
+      strOutput += str[j];
+    }
+  }
+}
+
+console.log(strOutput);
+
 // Bonus
 // Keep vowels in the new strings if they are succeeded by the letters l, m, or r
 // E.g: calum => calum, rachel => rchel, martyna => martyn

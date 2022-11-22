@@ -47,10 +47,10 @@ const findSmallestNumber = (no1, no2) => {
   return findsmallestNumber;
 };
 
-export const findSmallestNumber = (number1, number2) => {
-  console.log(array: numberArray, numbers: ...numberArray)
-  return.Math.min(...numberArray);
-};
+// const findSmallestNumber = (number1, number2) => {
+//   console.log(array, numberArray, numbers, ...numberArray)
+//   return.Math.min(...numberArray);
+// };
 
 /**
  * A function that takes two numbers as input, multiplies them together and returns the product.
@@ -137,7 +137,7 @@ calculateLifetimeSupply(7, 42, 83);
  */
 const getGrade = (score) => {
   if (score > 100 || score < 0 || NaN) {
-    return "Score unavaliable"
+    return "Score unavaliable";
   } elif (score >= 80 && score <= 100) {
     return "A";
   } elif (score >= 70 && score <= 79) {
@@ -148,7 +148,7 @@ const getGrade = (score) => {
     return "D";
   } elif (score >= 40 && score <= 49) {
     return "E";
-  } elif (score>= 30 && score <= 39) {
+  } else {
     return "F";
   }
 }

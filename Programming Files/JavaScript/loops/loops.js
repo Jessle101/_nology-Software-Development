@@ -54,10 +54,10 @@ for (let index = 0; index < students.length; ++index) {
 // this is an empty array where I will push my new values/modified values from mky original array
 const upperCaseStudents = [];
 
-for (let i = 0; i < students.length; ++i) {
-  let students = students[i].toUpperCase();
-  upperCaseStudents.push(students);
-}
+// for (let i = 0; i < students.length; ++i) {
+//   let students = students[i].toUpperCase();
+//   upperCaseStudents.push(students);
+// }
 
 console.log(upperCaseStudents);
 
@@ -88,3 +88,54 @@ for (let i = students.length - 1; i >= 0; --i) {
 
 console.log(reversed);
 console.log(students);
+
+// break
+const names = ["daniel", "ella", "jack", "john"];
+
+const toFind = "ella";
+
+let found = false;
+
+for (let i = 0; i < names.length; ++i) {
+  if (names[i] === toFind) {
+    found = true;
+    // early exit out of my loop
+    break;
+  }
+}
+
+console.log(found);
+
+// continue
+let someString = "this is a sentence";
+
+let count = 0;
+let vowels0 = ["a", "e", "i", "o", "u"];
+
+// for (let i = 0; i < someString.length; ++i) {
+//   const char = someString.charAy[i]; // same as someString[i]
+
+//   if (vowels0.includes(char) || char === " ") {
+//     continue;
+//   }
+
+//   console.log(char);
+//   count += 1;
+// }
+
+// While loop
+
+// Generate a random number
+
+// console.log(Math.ceil(Math.random() * 10));
+let num = Math.ceil(Math.random() * 10);
+
+// loop generates until number = 5
+while (num !== 5) {
+  console.log("The random number is " + num);
+  num = Math.ceil(Math.random() * 100);
+}
+
+// ${num} & export doesn't seem to work
+
+console.log(num, "final");
