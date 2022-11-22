@@ -84,7 +84,7 @@ const checkIfNewHighScore = (score, highScore) => {
   if (score > highScore) {
     checkIfNewHighScore = 1;
   } else {
-    checkIfNewHighScore = 0;
+    let checkIfNewHighScore = 0;
   }
   return checkIfNewHighScore;
 };
@@ -97,7 +97,7 @@ checkIfNewHighScore(2, 8);
  * @param {number} tempInCelsius 15
  * @returns {string} "15 degrees celsius is 59 degrees fahrenheit"
  */
- const celsiusToFahrenheit = (tempInCelsius) => {
+const celsiusToFahrenheit = (tempInCelsius) => {
   let tempInFar = tempInCelsius * 1.8 + 32;
   return `${tempInCelsius} degrees celsius is ${tempInFar} degrees fahrenheit`;
 };
@@ -113,8 +113,8 @@ checkIfNewHighScore(2, 8);
  */
 const calculateLifetimeSupply = (snickersPerDay, age, maxAge) => {
   days = (maxAge - age) / 365;
-  calculateLifetimeSupply = snickersPerDay * days;
-  return calculateLifetimeSupply;
+  totalSnickers = snickersPerDay * days;
+  return totalSnickers;
 };
 
 calculateLifetimeSupply(7, 42, 83);
@@ -135,24 +135,28 @@ calculateLifetimeSupply(7, 42, 83);
  * @param {number} score 0 - 100
  * @returns {string} A - F | Score unavailable
  */
+
 const getGrade = (score) => {
   if (score > 100 || score < 0 || NaN) {
     return "Score unavaliable";
-  } elif (score >= 80 && score <= 100) {
+  } else if (score >= 80 && score <= 100) {
     return "A";
-  } elif (score >= 70 && score <= 79) {
+  } else if (score >= 70 && score <= 79) {
     return "B";
-  } elif (score >= 60 && score <= 69) {
+  } else if (score >= 60 && score <= 69) {
     return "C";
-  } elif (score >= 50 && score <= 59) {
+  } else if (score >= 50 && score <= 59) {
     return "D";
-  } elif (score >= 40 && score <= 49) {
+  } else if (score >= 40 && score <= 49) {
     return "E";
   } else {
     return "F";
   }
-}
+};
 
+getGrade(69);
+getGrade(76);
+getGrade(3);
 /**
  * A function that find the area of a circle to 2 decimal places.
  *
