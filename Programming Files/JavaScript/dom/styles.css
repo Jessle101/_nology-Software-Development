@@ -1,0 +1,43 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(82, 18, 82);
+}
+
+body {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.body--darkMode {
+  background-color: rgb(82, 18, 82);
+}
+
+.container {
+  border: 2px solid rgb(82, 18, 82);
+  padding: 15px;
+  margin: 30px;
+  border-radius: 12px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container--darkMode {
+  color: white;
+  background-color: rgb(82, 18, 82);
+  border: 2px solid white;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: rgb(82, 18, 82);
+  border: 2px solid rgb(82, 18, 82);
+  color: white;
+  border-radius: 6px;
+  width: 150px;
+}
+.button--darkMode {
+  color: rgb(82, 18, 82);
+  background-color: white;
+}
